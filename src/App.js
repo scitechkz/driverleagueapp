@@ -1,18 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import FileUploader from './FileUploader';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-       <h> Welcome to the Driver Loyalty App</h>
-      </header>
+    <div>
+      <h1>File Upload to S3 Bucket</h1>
+      <FileUploader />
     </div>
   );
-}
+};
 
 export default App;
