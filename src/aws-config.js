@@ -1,10 +1,9 @@
-// aws-config.js
 import AWS from 'aws-sdk';
 
 AWS.config.update({
-  accessKeyId: 'AKIAWY4FV6MVUNQCTB66',
-  secretAccessKey: '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',
-  region: 'us-east-1',
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  region: process.env.AWS_REGION,
 });
 
 export const s3 = new AWS.S3();
